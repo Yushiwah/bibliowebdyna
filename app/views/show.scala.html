@@ -1,0 +1,9 @@
+@(p: Person) 
+<h3> Liste des informations de @p.getFirstname() </h3>
+<br>
+<li> ID : @p.getId() </li>
+<li> Nom : @p.getFirstname() </li>
+<li> Prenom : @p.getName() </li>
+<li> Age : @p.getAge() </li>
+<br>
+<a href =" @routes.HomeController.delete(p.getId())"> <input type="submit" value="Delete" > </a>

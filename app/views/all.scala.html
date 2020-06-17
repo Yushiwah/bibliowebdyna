@@ -1,0 +1,9 @@
+ @(liste: List[Person])
+
+<Title>Liste des @liste.size() personnes</Title> 
+<a href =" @routes.HomeController.utili"> Add Person </a>
+<ul>
+  @for(p <- liste) {
+        <li> <a href =" @routes.HomeController.show(p.getId())"> @p.getFirstname() , @p.getName() , @p.getAge() years old </a></li> 
+}
+</ul> 

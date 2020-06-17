@@ -1,0 +1,365 @@
+<html>
+
+    <head>
+        <!-- contient des informations pour le navigateur -->
+        <title>bibliothèque by Adrien NOEL</title>
+        <meta charset ="utf-8"/>
+        <meta author="Adrien NOEL"/>
+        <meta keywords="web html css"/>
+        <link rel=stylesheet type="text/css" href="@routes.Assets.versioned("stylesheets/TP2.css")">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    
+<STYLE>A {text-decoration: none;} </STYLE>    
+
+<body>
+<header>
+<a href=TP2.html><h1> Bibliothèque</h1>  </a>
+    
+</header>    
+<div class="principal">
+<a href="acceuil"><h4>accueil</h4></a><a href="categorie"><h4>catégories</h4></a><a href="ajout"><h4>ajouter un livre</h4></a><a href=reserver><h4>reserver un livre</h4></a>
+    
+    
+    
+</div>
+         <div class="secondaire">
+<h2> S'inscrire</h2>
+             <div class= "livres">
+<div class="livre3">
+<form method="post" action="utilisateur">
+   <fieldset>
+       <a href = "@routes.HomeController.utili"> S'inscrire </a> 
+   </fieldset>
+    
+</form>
+                 </div>
+             </div>
+    </div>  
+    <div class="secondaire">
+<h2> Ajouter un livre</h2>
+        <div class= "livres">
+<div class="livre3">
+<form method="post" action="newLivre">
+   <fieldset>
+       <a href = "@routes.HomeControllerLivre.newlivre"> Ajout </a> 
+   </fieldset>
+    </form>
+        </div>
+    </div>
+    </div> 
+<div class="secondaire">
+<h2> Coup de coeur</h2>
+<div class= "livres">
+
+
+
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Game of thrones </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/Tdefer.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Harry Potter</h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/Harry.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        
+         <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+        
+	</div>
+           
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Le seigneur des anneaux</h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/leseigneur.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+</div>
+<h2> Derniers livres ajoutés</h2>
+<div class= "livres">
+
+
+
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div> 
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div> 
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div>
+<div class="livre1">
+    
+    <div class=titre1>
+    <h3>Livre random </h3>
+    </div>
+    <img src = "@routes.Assets.versioned("images/livrel.jpg")">
+    
+    <div class=description1>
+       <h3> Description:</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet nibh luctus, ornare lorem quis, efficitur tellus. Etiam iaculis consectetur ipsum id facilisis. Pellentesque gravida, nisi at te
+        <h4 class="auteur">Auteur: Un Random</h4>
+        <div class="rating">
+	<div class="stars">
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star gold"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+	</div>
+    </div></div>
+
+    
+    
+    
+    </div> 
+
+
+</div>   
+</div>
+    
+    
+    
+</body>
+    
+    
+    
+</html>

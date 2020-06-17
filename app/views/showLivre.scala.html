@@ -1,0 +1,10 @@
+@(p: Livre) 
+<h3> Liste des informations du livre @p.getTitre() </h3>
+<br>
+<li> ID : @p.getId() </li>
+<li> Titre : @p.getTitre() </li>
+<li> Auteur : @p.getAuteur() </li>
+<li> Categorie : @p.getCategorie() </li>
+<li> Description : @p.getDescription() </li>
+<br>
+<a href =" @routes.HomeControllerLivre.deleteLivre(p.getId())"> <input type="submit" value="Delete" > </a>

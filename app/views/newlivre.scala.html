@@ -1,0 +1,12 @@
+@import play.mvc.Http.Request
+@(pForm: Form[Livre])(implicit request: Request, messages: play.i18n.Messages)
+
+@helper.form(action = routes.HomeControllerLivre.okNewLivre) {
+@helper.CSRF.formField
+@helper.inputText(pForm("titre"),'_label->"Titre")
+@helper.inputText(pForm("auteur"),'_label->"Auteur")
+@helper.inputText(pForm("description"),'_label->"Description")
+@helper.select(field = pForm("categorie"),options = Seq("fantastique"->"Fantastique", "thriller"->"Thriller","science-fiction"->"Science-fiction", "romance"->"Romance", "theatre"->"Theatre"))
+
+
+<input type="submit" value="Rajouter un livre"/>}

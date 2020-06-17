@@ -1,0 +1,9 @@
+ @(liste: List[Livre])
+
+<Title>Liste des @liste.size() livres</Title> 
+<a href =" @routes.HomeControllerLivre.newlivre"> Add Livre </a>
+<ul>
+  @for(p <- liste) {
+        <li> <a href =" @routes.HomeControllerLivre.showLivre(p.getId())"> @p.getTitre() , @p.getAuteur() de categorie: @p.getCategorie() </a></li> 
+}
+</ul> 

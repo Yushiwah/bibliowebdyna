@@ -1,0 +1,70 @@
+<html>
+    
+    <head>
+        <!-- contient des informations pour le navigateur -->
+        <title>bibliothèque by Adrien NOEL</title>
+        <meta charset ="utf-8"/>
+        <meta author="Adrien NOEL"/>
+        <meta keywords="web html css"/>
+        <link rel=stylesheet type="text/css" href="@routes.Assets.versioned("stylesheets/TP2.css")">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    
+<STYLE>A {text-decoration: none;} </STYLE>    
+
+<body>
+<header>
+<a href=TP2.html><h1> Bibliothèque</h1>  </a>
+    
+</header>    
+<div class="principal">
+<a href="acceuil"><h4>accueil</h4></a><a href="categorie"><h4>catégories</h4></a><a href="ajout"><h4>ajouter un livre</h4></a><a href=reserver><h4>reserver un livre</h4></a>
+    
+    
+</div>
+    <div class="secondaire">
+<h2> Reserver un livre</h2>
+<div class= "livres">  
+<div class="livre3">
+    
+<form method="post" action="traitement.php">
+       <fieldset>
+       <legend>Votre nom</legend>
+        <input type="text" name="titre" id="titre" />
+   </fieldset>
+    
+    <fieldset>
+       <legend>Votre prenom</legend>
+        <input type="text" name="auteur" id="auteur" />
+   </fieldset>
+    
+  <fieldset>
+       <legend>information du livre</legend>
+            
+                <select id="infos" name="titre2">
+                  <optgroup label="Titre">
+                    <option value="got">Game Of Thrones</option>
+                    <option value="hp">Harry-Potter</option>
+                      <option value="sda">Le Seigneur des Anneaux</option>
+                    <option value="ldcp">Le livre des choses perdues</option>
+                    </optgroup>
+      </select>
+   </fieldset>
+    
+    
+    <fieldset>
+         <legend>Date de reservation</legend> 
+        <input type="date" name="date">
+        
+    </fieldset>
+   <fieldset>
+       <legend>reservation</legend>
+           <input type="submit" value="reserver" />     <input type="reset" value="recommencer"/>
+   </fieldset>
+    
+</form>
+    </div>  
+</div>
+</div>
+    </body>
+</html>

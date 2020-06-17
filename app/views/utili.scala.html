@@ -1,0 +1,10 @@
+@import play.mvc.Http.Request
+@(pForm: Form[Person])(implicit request: Request, messages: play.i18n.Messages)
+
+@helper.form(action = routes.HomeController.welcome) {
+@helper.CSRF.formField
+@helper.inputText(pForm("name"),'_label->"Nom")
+@helper.inputText(pForm("firstname"),'_label->"Prenom")
+@helper.inputText(pForm("age"),'_label->"Age") 
+
+<input type="submit" value="S'inscrire"/>}
